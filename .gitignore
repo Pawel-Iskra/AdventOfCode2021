@@ -8,7 +8,7 @@
 *.ipr
 *.mvn
 *.mvnw
-/day00
+day00/
 
 # Package Files #
 *.jar
