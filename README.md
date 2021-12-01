@@ -11,6 +11,6 @@ my solutions for puzzles<br>
    <tr align="center" vlign="middle">
       <td>01</td>
       <td><a href="https://adventofcode.com/2021/day/1">Sonar Sweep</td>
-      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/solutions/Sonar weep.java">Part1 & Part2</a></td> 
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day01/SonarSweep.java">Part1 & Part2</a></td> 
    </tr>
   </table>
