@@ -24,10 +24,10 @@ public class SonarSweep {
         int increasesCounter = 0;
         int slidingWindowCounter = 0;
         for (int i = 3; i < inputSize; i++) {
-            int depth1 = Integer.parseInt(inputLines.get(i - 3).strip().replace("[^0-9]+", ""));
-            int depth2 = Integer.parseInt(inputLines.get(i - 2).strip().replace("[^0-9]+", ""));
-            int depth3 = Integer.parseInt(inputLines.get(i - 1).strip().replace("[^0-9]+", ""));
-            int depth4 = Integer.parseInt(inputLines.get(i).strip().replace("[^0-9]+", ""));
+            int depth1 = Integer.parseInt(inputLines.get(i - 3).strip().replaceAll("[^0-9]", ""));
+            int depth2 = Integer.parseInt(inputLines.get(i - 2).strip().replaceAll("[^0-9]", ""));
+            int depth3 = Integer.parseInt(inputLines.get(i - 1).strip().replaceAll("[^0-9]", ""));
+            int depth4 = Integer.parseInt(inputLines.get(i).strip().replaceAll("[^0-9]", ""));
 
             if (depth2 > depth1) increasesCounter++;
             if ((depth2 + depth3 + depth4) > (depth1 + depth2 + depth3)) slidingWindowCounter++;
