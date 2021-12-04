@@ -17,4 +17,14 @@ my solutions for puzzles<br>
       <td><a href="https://adventofcode.com/2021/day/2">Dive!</td>
       <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day02/Dive.java">Part1 & Part2</a></td> 
    </tr>
+    <tr align="center" vlign="middle">
+      <td>03</td>
+      <td><a href="https://adventofcode.com/2021/day/3"> Binary Diagnostic</td>
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day03/BinaryDiagnostic.java">Part1 & Part2</a></td> 
+   </tr>
+    <tr align="center" vlign="middle">
+      <td>04</td>
+      <td><a href="https://adventofcode.com/2021/day/4">Giant Squid</td>
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day04/GiantSquid.java">Part1 & Part2</a></td> 
+   </tr>
   </table>
