@@ -27,4 +27,9 @@ my solutions for puzzles<br>
       <td><a href="https://adventofcode.com/2021/day/4">Giant Squid</td>
       <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day04/GiantSquid.java">Part1 & Part2</a></td> 
    </tr>
+   <tr align="center" vlign="middle">
+      <td>05</td>
+      <td><a href="https://adventofcode.com/2021/day/5">Hydrothermal Venture</td>
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day05/HydrothermalVenture.java">Part1 & Part2</a></td> 
+   </tr>
   </table>
