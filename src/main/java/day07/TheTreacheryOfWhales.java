@@ -31,7 +31,7 @@ public class TheTreacheryOfWhales {
                 .collect(Collectors.toList());
     }
 
-    private static int calculateFuelCostsParts(List<Integer> crabPositionsIntsList, int highestPosition, int part) {
+    private static int getMinFuelCostsToAlignCrabs(List<Integer> crabPositionsIntsList, int highestPosition, int part) {
         int[] fuelCosts = new int[highestPosition];
         for (int i = 0; i < fuelCosts.length; i++) {
             for (int j = 0; j < crabPositionsIntsList.size(); j++) {
@@ -59,7 +59,7 @@ public class TheTreacheryOfWhales {
         Collections.sort(crabPositionsIntsList);
         int highestPosition = crabPositionsIntsList.get(numOfCrabs - 1);
 
-        System.out.println("Part 1 = " + calculateFuelCostsParts(crabPositionsIntsList, highestPosition, 1));
-        System.out.println("Part 2 = " + calculateFuelCostsParts(crabPositionsIntsList, highestPosition, 2));
+        System.out.println("Part 1 = " + getMinFuelCostsToAlignCrabs(crabPositionsIntsList, highestPosition, 1));
+        System.out.println("Part 2 = " + getMinFuelCostsToAlignCrabs(crabPositionsIntsList, highestPosition, 2));
     }
 }
