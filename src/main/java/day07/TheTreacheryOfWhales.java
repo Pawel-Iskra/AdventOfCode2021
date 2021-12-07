@@ -26,8 +26,8 @@ public class TheTreacheryOfWhales {
 
     private static List<Integer> getCrabPositions(List<String> crabPositionsStringList) {
         String[] crabPositionsStrings = crabPositionsStringList.get(0).split(",");
-        return Arrays.stream(crabPositionsStrings).
-                map(pos -> Integer.parseInt(pos))
+        return Arrays.stream(crabPositionsStrings)
+                .map(pos -> Integer.parseInt(pos))
                 .collect(Collectors.toList());
     }
 
