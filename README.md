@@ -42,4 +42,9 @@ my solutions for puzzles<br>
       <td><a href="https://adventofcode.com/2021/day/7">The Treachery of Whales</td>
       <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day07/TheTreacheryOfWhales.java">Part1 & Part2</a></td> 
    </tr>
+    <tr align="center" vlign="middle">
+      <td>08</td>
+      <td><a href="https://adventofcode.com/2021/day/8">Seven Segment Search</td>
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day08/SevenSegmentSearch.java">Part1 & Part2</a></td> 
+   </tr>
   </table>
