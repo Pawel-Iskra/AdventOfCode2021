@@ -47,4 +47,9 @@ my solutions for puzzles<br>
       <td><a href="https://adventofcode.com/2021/day/8">Seven Segment Search</td>
       <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day08/SevenSegmentSearch.java">Part1 & Part2</a></td> 
    </tr>
+   <tr align="center" vlign="middle">
+      <td>09</td>
+      <td><a href="https://adventofcode.com/2021/day/9">Smoke Basin</td>
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day09/SmokeBasin.java">Part1 & Part2</a></td> 
+   </tr>
   </table>
