@@ -82,15 +82,15 @@ public class SyntaxScoring {
         return isClosingSymbol;
     }
 
-    private static long getMiddleScoreOfCompletionLines(List<String> completionLines) {
+    private static long getMiddleScoreOfCompletionLines(List<String> symbolsLines) {
         List<Long> scoresForLines = new ArrayList<>();
         List<String> incompleteLines = new ArrayList<>();
-        completionLines.forEach(completionLine -> {
+        symbolsLines.forEach(symbolsLine -> {
             boolean isCorrupted = false;
             Stack<String> symbolsStack = new Stack<>();
-            int length = completionLine.length();
+            int length = symbolsLine.length();
             for (int i = 0; i < length; i++) {
-                String currentSymbol = String.valueOf(completionLine.charAt(i));
+                String currentSymbol = String.valueOf(symbolsLine.charAt(i));
                 if (openSymbols.contains(currentSymbol)) {
                     symbolsStack.push(currentSymbol);
                 } else {
@@ -102,7 +102,7 @@ public class SyntaxScoring {
                     }
                 }
             }
-            if (!isCorrupted) incompleteLines.add(completionLine);
+            if (!isCorrupted) incompleteLines.add(symbolsLine);
         });
         incompleteLines.forEach(incompleteLine -> {
             String completionLine = getCompletionLine(incompleteLine);
