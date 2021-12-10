@@ -137,9 +137,9 @@ public class SyntaxScoring {
     }
 
     public static void main(String[] args) throws IOException {
-        List<String> chunksLines = MyUtilities.getInputLines("src/main/java/day10/input.txt");
+        List<String> symbolsLines = MyUtilities.getInputLines("src/main/java/day10/input.txt");
 
-        System.out.println("Part 1 = " + getTotalSyntaxErrorScore(chunksLines));
-        System.out.println("Part 2 = " + getMiddleScoreOfCompletionLines(chunksLines));
+        System.out.println("Part 1 = " + getTotalSyntaxErrorScore(symbolsLines));
+        System.out.println("Part 2 = " + getMiddleScoreOfCompletionLines(symbolsLines));
     }
 }
