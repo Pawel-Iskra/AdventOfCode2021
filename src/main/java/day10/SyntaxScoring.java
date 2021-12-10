@@ -142,4 +142,16 @@ public class SyntaxScoring {
         System.out.println("Part 1 = " + getTotalSyntaxErrorScore(symbolsLines));
         System.out.println("Part 2 = " + getMiddleScoreOfCompletionLines(symbolsLines));
     }
+
+
+    /////////////////////////////////////////////////////////////////////
+    //////////////////// added for testing purposes only ////////////////
+    public int getResultForPartOne(List<String> inputLines) {       /////
+        return getTotalSyntaxErrorScore(inputLines);                /////
+    }                                                               /////
+    public long getResultForPartTwo(List<String> inputLines) {      /////
+        return getMiddleScoreOfCompletionLines(inputLines);         /////
+    }                                                               /////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
 }
