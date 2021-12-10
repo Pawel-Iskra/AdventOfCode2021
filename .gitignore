@@ -9,6 +9,7 @@
 *.mvn
 *.mvnw
 day00/
+target/
 
 # Package Files #
 *.jar
