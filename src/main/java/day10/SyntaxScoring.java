@@ -82,27 +82,27 @@ public class SyntaxScoring {
         return isClosingSymbol;
     }
 
-    private static long getMiddleScoreOfCompletionStrings(List<String> chunksLines) {
+    private static long getMiddleScoreOfCompletionLines(List<String> completionLines) {
         List<Long> scoresForLines = new ArrayList<>();
         List<String> incompleteLines = new ArrayList<>();
-        chunksLines.forEach(line -> {
+        completionLines.forEach(completionLine -> {
             boolean isCorrupted = false;
-            Stack<String> chunksStack = new Stack<>();
-            int length = line.length();
+            Stack<String> symbolsStack = new Stack<>();
+            int length = completionLine.length();
             for (int i = 0; i < length; i++) {
-                String currentChunk = String.valueOf(line.charAt(i));
-                if (openSymbols.contains(currentChunk)) {
-                    chunksStack.push(currentChunk);
+                String currentSymbol = String.valueOf(completionLine.charAt(i));
+                if (openSymbols.contains(currentSymbol)) {
+                    symbolsStack.push(currentSymbol);
                 } else {
-                    if (isClosingSymbolNow(chunksStack.peek(), currentChunk)) {
-                        chunksStack.pop();
+                    if (isClosingSymbolNow(symbolsStack.peek(), currentSymbol)) {
+                        symbolsStack.pop();
                     } else {
                         isCorrupted = true;
                         break;
                     }
                 }
             }
-            if (!isCorrupted) incompleteLines.add(line);
+            if (!isCorrupted) incompleteLines.add(completionLine);
         });
         incompleteLines.forEach(incompleteLine -> {
             String completionLine = getCompletionLine(incompleteLine);
@@ -114,26 +114,25 @@ public class SyntaxScoring {
         return scoresForLines.get((scoresForLines.size() - 1) / 2);
     }
 
-    private static int getTotalSyntaxErrorScore(List<String> chunksLines) {
+    private static int getTotalSyntaxErrorScore(List<String> symbolsLines) {
         int[] score = {0};
-        chunksLines
-                .forEach(chunksLine -> {
-                    Stack<String> symbolsStack = new Stack<>();
-                    int lineLength = chunksLine.length();
-                    for (int i = 0; i < lineLength; i++) {
-                        String currentSymbol = String.valueOf(chunksLine.charAt(i));
-                        if (openSymbols.contains(currentSymbol)) {
-                            symbolsStack.push(currentSymbol);
-                        } else {
-                            if (isClosingSymbolNow(symbolsStack.peek(), currentSymbol)) {
-                                symbolsStack.pop();
-                            } else {
-                                score[0] += getPointsForClosingSymbol(currentSymbol);
-                                break;
-                            }
-                        }
+        symbolsLines.forEach(symbolsLine -> {
+            Stack<String> symbolsStack = new Stack<>();
+            int lineLength = symbolsLine.length();
+            for (int i = 0; i < lineLength; i++) {
+                String currentSymbol = String.valueOf(symbolsLine.charAt(i));
+                if (openSymbols.contains(currentSymbol)) {
+                    symbolsStack.push(currentSymbol);
+                } else {
+                    if (isClosingSymbolNow(symbolsStack.peek(), currentSymbol)) {
+                        symbolsStack.pop();
+                    } else {
+                        score[0] += getPointsForClosingSymbol(currentSymbol);
+                        break;
                     }
-                });
+                }
+            }
+        });
         return score[0];
     }
 
@@ -141,6 +140,6 @@ public class SyntaxScoring {
         List<String> chunksLines = MyUtilities.getInputLines("src/main/java/day10/input.txt");
 
         System.out.println("Part 1 = " + getTotalSyntaxErrorScore(chunksLines));
-        System.out.println("Part 2 = " + getMiddleScoreOfCompletionStrings(chunksLines));
+        System.out.println("Part 2 = " + getMiddleScoreOfCompletionLines(chunksLines));
     }
 }
