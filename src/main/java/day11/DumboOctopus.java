@@ -123,4 +123,19 @@ public class DumboOctopus {
         System.out.println("Part 1 = " + getNumberOfFlashesAfterSteps(octopusEnergyLevelsLines, 100));
         System.out.println("Part 2 = " + getFirstStepWhenAllOctopusesFlash(octopusEnergyLevelsLines));
     }
+
+
+
+
+
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////// added for testing purposes only /////////////////////////////////////////
+    public int getResultForPartOne(List<String> octopusEnergyLevelsLines, int steps) {       /////
+        return getNumberOfFlashesAfterSteps(octopusEnergyLevelsLines, steps);                /////
+    }                                                                                        /////
+    public int getResultForPartTwo(List<String> octopusEnergyLevelsLines) {                  /////
+        return getFirstStepWhenAllOctopusesFlash(octopusEnergyLevelsLines);                  /////
+    }                                                                                        /////
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////
 }
