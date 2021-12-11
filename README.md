@@ -57,4 +57,9 @@ my solutions for puzzles<br>
       <td><a href="https://adventofcode.com/2021/day/10">Syntax Scoring</td>
       <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day10/SyntaxScoring.java">Part1 & Part2</a></td> 
    </tr>
+   <tr align="center" vlign="middle">
+      <td>11</td>
+      <td><a href="https://adventofcode.com/2021/day/11">Dumbo Octopus</td>
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day11/DumboOctopus.java">Part1 & Part2</a></td> 
+   </tr>
   </table>
