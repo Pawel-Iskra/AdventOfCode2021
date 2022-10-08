@@ -67,6 +67,11 @@ my solutions for puzzles<br>
       <td><a href="https://adventofcode.com/2021/day/12">Passage Pathing</td>
       <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day12/PassagePathing.java">Part1 & Part2</a></td> 
    </tr>
+   <tr align="center" vlign="middle">
+      <td>14</td>
+      <td><a href="https://adventofcode.com/2021/day/14">Extended Polymerization</td>
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day14/ExtendedPolymerization.java">Part1 & Part2</a></td> 
+   </tr>
      <tr align="center" vlign="middle">
       <td>15</td>
       <td><a href="https://adventofcode.com/2021/day/15">Chiton</td>
