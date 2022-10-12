@@ -77,4 +77,9 @@ my solutions for puzzles<br>
       <td><a href="https://adventofcode.com/2021/day/15">Chiton</td>
       <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day15/Chiton.java">Part1 & Part2</a></td> 
    </tr>
+   <tr align="center" vlign="middle">
+      <td>17</td>
+      <td><a href="https://adventofcode.com/2021/day/17">TrickShot</td>
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day17/TrickShot.java">Part1 & Part2</a></td> 
+   </tr>
   </table>
