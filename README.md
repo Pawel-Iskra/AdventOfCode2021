@@ -87,4 +87,9 @@ my solutions for puzzles<br>
       <td><a href="https://adventofcode.com/2021/day/20">Trench Map</td>
       <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day20/TrenchMap.java">Part1 & Part2</a></td> 
    </tr>
+<tr align="center" vlign="middle">
+      <td>21</td>
+      <td><a href="https://adventofcode.com/2021/day/21">DiracDice</td>
+      <td><a href="https://github.com/Pawel-Iskra/AdventOfCode2021/blob/master/src/main/java/day21/DiracDice.java">Part1</a></td> 
+   </tr>
   </table>
